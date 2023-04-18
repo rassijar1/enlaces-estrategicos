@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "bf72a9ca-a01c-441a-873a-8f61afb9373d",
+		"name": "Enlaces estrategicos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post show request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/V1/posts/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"V1",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posts index request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/V1/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"V1",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post store request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"titulo\":\"Vue Js 3\",\r\n\"resumen\":\"Vue Js 3\",\r\n\"introduccion\":\"Vue Js 3\",\r\n\"cuerpo\":\"Vue Js 3\",\r\n\"conclusion\":\"Vue Js 3\",\r\n\"id_post_fk\":\"1\"\r\n\r\n\r\n\r\n\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/V1/posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"V1",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posts  update request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"titulo\":\"Vue Js 1 ...\",\r\n\"resumen\":\"Vue Js 2\",\r\n\"introduccion\":\"Vue Js 3\",\r\n\"cuerpo\":\"Vue Js 13333\",\r\n\"conclusion\":\"Vue Js 1676657\",\r\n\"id_post_fk\":1\r\n\r\n\r\n\r\n\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/V1/posts/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"V1",
+						"posts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posts delete request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"name\":\"Laravel\",\r\n\"slug\":\"Laravel\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/V1/posts/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"V1",
+						"posts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
